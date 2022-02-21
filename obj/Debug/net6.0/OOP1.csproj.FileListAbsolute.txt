@@ -1,0 +1,15 @@
+/home/sren/TEC/cSharp/Hovedforlob/OOP1/bin/Debug/net6.0/OOP1
+/home/sren/TEC/cSharp/Hovedforlob/OOP1/bin/Debug/net6.0/OOP1.deps.json
+/home/sren/TEC/cSharp/Hovedforlob/OOP1/bin/Debug/net6.0/OOP1.runtimeconfig.json
+/home/sren/TEC/cSharp/Hovedforlob/OOP1/bin/Debug/net6.0/OOP1.dll
+/home/sren/TEC/cSharp/Hovedforlob/OOP1/bin/Debug/net6.0/OOP1.pdb
+/home/sren/TEC/cSharp/Hovedforlob/OOP1/obj/Debug/net6.0/OOP1.csproj.AssemblyReference.cache
+/home/sren/TEC/cSharp/Hovedforlob/OOP1/obj/Debug/net6.0/OOP1.GeneratedMSBuildEditorConfig.editorconfig
+/home/sren/TEC/cSharp/Hovedforlob/OOP1/obj/Debug/net6.0/OOP1.AssemblyInfoInputs.cache
+/home/sren/TEC/cSharp/Hovedforlob/OOP1/obj/Debug/net6.0/OOP1.AssemblyInfo.cs
+/home/sren/TEC/cSharp/Hovedforlob/OOP1/obj/Debug/net6.0/OOP1.csproj.CoreCompileInputs.cache
+/home/sren/TEC/cSharp/Hovedforlob/OOP1/obj/Debug/net6.0/OOP1.dll
+/home/sren/TEC/cSharp/Hovedforlob/OOP1/obj/Debug/net6.0/refint/OOP1.dll
+/home/sren/TEC/cSharp/Hovedforlob/OOP1/obj/Debug/net6.0/OOP1.pdb
+/home/sren/TEC/cSharp/Hovedforlob/OOP1/obj/Debug/net6.0/OOP1.genruntimeconfig.cache
+/home/sren/TEC/cSharp/Hovedforlob/OOP1/obj/Debug/net6.0/ref/OOP1.dll
