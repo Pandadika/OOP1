@@ -12,7 +12,7 @@ namespace OOP1.codes
         }
 
         public string? Name(){
-            return base.SchoolName;
+            return SchoolName;
         }
 
         public string? Forloeb()

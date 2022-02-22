@@ -17,7 +17,6 @@ C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\bin\Debug\net6.0\OOP1.exe
 C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\bin\Debug\net6.0\OOP1.deps.json
 C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\bin\Debug\net6.0\OOP1.runtimeconfig.json
 C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\bin\Debug\net6.0\OOP1.dll
-C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\bin\Debug\net6.0\ref\OOP1.dll
 C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\bin\Debug\net6.0\OOP1.pdb
 C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\obj\Debug\net6.0\OOP1.csproj.AssemblyReference.cache
 C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\obj\Debug\net6.0\OOP1.GeneratedMSBuildEditorConfig.editorconfig
@@ -28,3 +27,4 @@ C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\obj\Debug\net6.0\OOP1.dll
 C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\obj\Debug\net6.0\ref\OOP1.dll
 C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\obj\Debug\net6.0\OOP1.pdb
 C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\obj\Debug\net6.0\OOP1.genruntimeconfig.cache
+C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\obj\Debug\net6.0\refint\OOP1.dll

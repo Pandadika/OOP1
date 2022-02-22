@@ -3,7 +3,6 @@
 using OOP1.codes;
 using OOP1.codes.models;
 
-//OOP1.codes.School s = new();
 
 List<Student> Students = new(){
     new Student(1, "Martin", "Jensen"),
@@ -25,8 +24,8 @@ List<Enrollment> Enrollments = new();
 
 
 
+//School s = new();
 Semester se = new("H1");
-se.Name();
 
 string? output;
 string input;
@@ -81,7 +80,7 @@ try
 {
     inputId = Int32.Parse(input);
 }
-catch (System.Exception)
+catch (System.Exception e)
 {
     System.Console.WriteLine("Course findes ikke");
     throw;
