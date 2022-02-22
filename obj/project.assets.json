@@ -8,25 +8,31 @@
     "net6.0": []
   },
   "packageFolders": {
-    "/home/sren/.nuget/packages/": {}
+    "C:\\Users\\Søren\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/sren/TEC/cSharp/Hovedforlob/OOP1/OOP1.csproj",
+      "projectUniqueName": "C:\\Users\\Søren\\Documents\\TEC\\Hovedforløb 1\\OOP1\\OOP1.csproj",
       "projectName": "OOP1",
-      "projectPath": "/home/sren/TEC/cSharp/Hovedforlob/OOP1/OOP1.csproj",
-      "packagesPath": "/home/sren/.nuget/packages/",
-      "outputPath": "/home/sren/TEC/cSharp/Hovedforlob/OOP1/obj/",
+      "projectPath": "C:\\Users\\Søren\\Documents\\TEC\\Hovedforløb 1\\OOP1\\OOP1.csproj",
+      "packagesPath": "C:\\Users\\Søren\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Søren\\Documents\\TEC\\Hovedforløb 1\\OOP1\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/sren/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Søren\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
       },
       "frameworks": {
         "net6.0": {
@@ -58,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

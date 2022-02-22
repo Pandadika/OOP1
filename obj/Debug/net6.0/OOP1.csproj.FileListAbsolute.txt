@@ -13,3 +13,18 @@
 /home/sren/TEC/cSharp/Hovedforlob/OOP1/obj/Debug/net6.0/OOP1.pdb
 /home/sren/TEC/cSharp/Hovedforlob/OOP1/obj/Debug/net6.0/OOP1.genruntimeconfig.cache
 /home/sren/TEC/cSharp/Hovedforlob/OOP1/obj/Debug/net6.0/ref/OOP1.dll
+C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\bin\Debug\net6.0\OOP1.exe
+C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\bin\Debug\net6.0\OOP1.deps.json
+C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\bin\Debug\net6.0\OOP1.runtimeconfig.json
+C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\bin\Debug\net6.0\OOP1.dll
+C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\bin\Debug\net6.0\ref\OOP1.dll
+C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\bin\Debug\net6.0\OOP1.pdb
+C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\obj\Debug\net6.0\OOP1.csproj.AssemblyReference.cache
+C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\obj\Debug\net6.0\OOP1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\obj\Debug\net6.0\OOP1.AssemblyInfoInputs.cache
+C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\obj\Debug\net6.0\OOP1.AssemblyInfo.cs
+C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\obj\Debug\net6.0\OOP1.csproj.CoreCompileInputs.cache
+C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\obj\Debug\net6.0\OOP1.dll
+C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\obj\Debug\net6.0\ref\OOP1.dll
+C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\obj\Debug\net6.0\OOP1.pdb
+C:\Users\Søren\Documents\TEC\Hovedforløb 1\OOP1\obj\Debug\net6.0\OOP1.genruntimeconfig.cache

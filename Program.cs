@@ -29,7 +29,7 @@ Semester se = new("H1");
 se.Name();
 
 string? output;
-string? input;
+string input;
 
 
 System.Console.WriteLine("Angiv Skole");
