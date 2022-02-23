@@ -35,19 +35,9 @@ namespace OOP1.codes.EntityFrameworkModels
         {
             modelBuilder.Entity<Class>(entity =>
             {
-                entity.HasNoKey();
-
                 entity.ToTable("Class");
 
-                entity.HasOne(d => d.CourseNavigation)
-                    .WithMany()
-                    .HasForeignKey(d => d.Course)
-                    .HasConstraintName("FK__Class__Course__2B3F6F97");
-
-                entity.HasOne(d => d.StudentNavigation)
-                    .WithMany()
-                    .HasForeignKey(d => d.Student)
-                    .HasConstraintName("FK__Class__Student__2C3393D0");
+                entity.Property(e => e.Id).HasColumnName("id");
             });
 
             modelBuilder.Entity<Course>(entity =>
