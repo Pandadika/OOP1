@@ -4,14 +4,15 @@ namespace OOP1.codes
 {
     sealed class Semester : School
     {
-        private string? SemesterNavn {get; set;}
+        private string? SemesterNavn { get; set; }
 
         public Semester(string s)
         {
-            SemesterNavn = s; 
+            SemesterNavn = s;
         }
 
-        public string? Name(){
+        public string? Name()
+        {
             return SchoolName;
         }
 

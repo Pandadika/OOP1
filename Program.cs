@@ -4,56 +4,77 @@ using OOP1.codes;
 using OOP1.codes.models;
 
 
-List<Student> Students = new(){
-    new Student(1, "Martin", "Jensen"),
-    new Student(2, "Patrik", "Nielsen"),
-    new Student(3, "Susanne", "Hansen"),
-    new Student(4, "Thomas", "Olsen")
+
+
+ADOHandler aDOHandler = new ADOHandler();
+List<Teacher> listteachers = aDOHandler.GetTeacher();
+foreach (var teacher in listteachers)
+{
+    Console.WriteLine(teacher.FirstnName);
+}
+
+
+
+
+
+
+
+
+
+//OPG initit something lol dårlig komment alligevel
+
+List<Student> Students = new()
+{
+    new(1, "Martin", "Jensen"),
+    new(2, "Patrik", "Nielsen"),
+    new(3, "Susanne", "Hansen"),
+    new(4, "Thomas", "Olsen")
 };
-List<Teacher> Teachers = new(){
-    new Teacher(1, "Niels", "Olesen"),
-    new Teacher(2, "Henrik", "Paulsen")
+List<Teacher> Teachers = new()
+{
+    new(1, "Niels", "Olesen"),
+    new(2, "Henrik", "Paulsen")
 };
-List<Course> Courses = new(){
-    new Course(1, "Grundliggende programmering", 1),
-    new Course(2, "Database programmering", 1),
-    new Course(3, "Studieteknik", 1),
-    new Course(4, "Clientside programmering", 2)
+List<Course> Courses = new()
+{
+    new(1, "Grundliggende programmering", 1),
+    new(2, "Database programmering", 1),
+    new(3, "Studieteknik", 1),
+    new(4, "Clientside programmering", 2)
 };
 List<Enrollment> Enrollments = new();
-
-
 
 //School s = new();
 Semester se = new("H1");
 
 string? output;
-string input;
+string? input;
 
 
 System.Console.WriteLine("Angiv Skole");
 input = Console.ReadLine();
-while(input != se.Name()){
+while (input != se.Name())
+{
     System.Console.WriteLine("Skole findes ikke");
     System.Console.WriteLine("Angiv Skole");
     input = Console.ReadLine();
 }
-output = input+", ";
+output = input + ", ";
 System.Console.WriteLine("Angiv Hovedforløb");
 input = Console.ReadLine();
-while(input != se.Forloeb()){
+while (input != se.Forloeb())
+{
     System.Console.WriteLine("Hovedforløb findes ikke");
     System.Console.WriteLine("Angiv Hovedforløb");
     input = Console.ReadLine();
 }
-output += input+" ";
+output += input + " ";
 output += "Fag tilmeldings app.";
 System.Console.WriteLine(output);
 
 System.Console.WriteLine("Indtast elev");
 input = Console.ReadLine();
 int inputId;
-
 try
 {
     inputId = Int32.Parse(input);
@@ -94,7 +115,7 @@ foreach (var course in Courses)
     }
 }
 
-Enrollments.Add(new Enrollment(Enrollments.Count+1,StudentId,CourseId));
+Enrollments.Add(new Enrollment(Enrollments.Count + 1, StudentId, CourseId));
 
 foreach (var enrollment in Enrollments)
 {
