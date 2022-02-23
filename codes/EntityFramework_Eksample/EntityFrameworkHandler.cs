@@ -29,6 +29,13 @@ namespace OOP1.codes.EntityFramework_Eksample
             return db.Courses.ToList();
         }
 
+        public List<Class> GetClasses()
+        {
+            using TECContext db =new();
+
+            return db.Classes.ToList();
+        }
+
         public void InsertEnrollement(int studentid, int courseid)
         {
             using TECContext db = new();
@@ -38,5 +45,18 @@ namespace OOP1.codes.EntityFramework_Eksample
             db.SaveChanges();
 
         }
+
+        public void ClearEnrollement()
+        {
+            using TECContext db = new();
+            foreach (Class item in db.Classes.ToList())
+            {
+                db.Remove(item);
+            }
+            db.SaveChanges();
+
+        }
+
+
     }
 }

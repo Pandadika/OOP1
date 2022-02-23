@@ -4,7 +4,7 @@ using OOP1.codes;
 using OOP1.codes.EntityFrameworkModels;
 using OOP1.codes.EntityFramework_Eksample;
 
-List<Class> Enrollments = new();
+
 
 
 EntityFrameworkHandler en = new EntityFrameworkHandler();
@@ -85,10 +85,6 @@ foreach (var course in courses)
     }
 }
 
-Enrollments.Add(new Class() {Course = CourseId, Student = StudentId });
-
-foreach (var enrollment in Enrollments)
-{
-    System.Console.WriteLine(enrollment.ToString());
-}
+en.InsertEnrollement(StudentId, CourseId);
+List<Class> Enrollments = en.GetClasses();
 
