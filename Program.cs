@@ -2,43 +2,16 @@
 // pat OOP1Token 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
 using OOP1.codes;
 using OOP1.codes.EntityFrameworkModels;
-
-
-
-
-
-
-
-
-
-
-//OPG initit something lol dårlig komment alligevel
-/*
-List<Student> Students = new()
-{
-    new() {Id = 1, FirstName = "Jens", LastName = "Jensen" },
-    new(2, "Patrik", "Nielsen"),
-    new(3, "Susanne", "Hansen"),
-    new(4, "Thomas", "Olsen")
-};
-List<Teacher> Teachers = new()
-{
-    new(1, "Niels", "Olesen"),
-    new(2, "Henrik", "Paulsen")
-};
-List<Course> Courses = new()
-{
-    new(1, "Grundliggende programmering", 1),
-    new(2, "Database programmering", 1),
-    new(3, "Studieteknik", 1),
-    new(4, "Clientside programmering", 2)
-};
-*/
-
-
-
+using OOP1.codes.EntityFramework_Eksample;
 
 List<Class> Enrollments = new();
+
+
+EntityFrameworkHandler en = new EntityFrameworkHandler();
+List<Student> students = en.GetStudents();
+List<Course> courses = en.GetCourses();
+List<Teacher> teachers = en.GetTeacher();
+
 
 //School s = new();
 Semester se = new("H1");
@@ -78,11 +51,12 @@ try
 catch (System.Exception)
 {
     System.Console.WriteLine("Student findes ikke");
+    
     throw;
 }
 
 int StudentId = 0;
-foreach (var student in Students)
+foreach (var student in students)
 {
     if (student.Id == inputId)
     {
@@ -103,7 +77,7 @@ catch (System.Exception e)
     throw;
 }
 int CourseId = 0;
-foreach (var course in Courses)
+foreach (var course in courses)
 {
     if (course.Id == inputId)
     {

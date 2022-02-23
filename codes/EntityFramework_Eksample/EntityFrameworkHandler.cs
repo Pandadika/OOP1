@@ -12,31 +12,30 @@ namespace OOP1.codes.EntityFramework_Eksample
     {
         public List<Teacher> GetTeacher()
         {
-            TECContext db = new();
+            using TECContext db = new();
             return db.Teachers.ToList();
         }
 
         public List<Student> GetStudents()
         {
-            TECContext db =new();
+            using TECContext db =new();
             return db.Students.ToList();
         }
 
         public List<Course> GetCourses()
         {
-            TECContext db = new();
+            using TECContext db = new();
             
             return db.Courses.ToList();
         }
 
         public void InsertEnrollement(int studentid, int courseid)
         {
-            using SqlConnection con = new SqlConnection(ConnectionString);
-            con.Open();
-
-            SqlCommand command = new SqlCommand($"INSERT INTO Enrollment VALUES({studentid},{courseid})", con);
-
-            command.ExecuteNonQuery();
+            using TECContext db = new();
+            Class enrollment = new() { Student = studentid, Course = courseid };
+    
+            db.Add(enrollment);
+            db.SaveChanges();
 
         }
     }
