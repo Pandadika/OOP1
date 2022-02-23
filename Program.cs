@@ -1,17 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // pat OOP1Token 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
 using OOP1.codes;
-using OOP1.codes.models;
+using OOP1.codes.EntityFrameworkModels;
 
-
-
-
-ADOHandler aDOHandler = new ADOHandler();
-List<Teacher> listteachers = aDOHandler.GetTeacher();
-foreach (var teacher in listteachers)
-{
-    Console.WriteLine(teacher.FirstnName);
-}
 
 
 
@@ -22,10 +13,10 @@ foreach (var teacher in listteachers)
 
 
 //OPG initit something lol dårlig komment alligevel
-
+/*
 List<Student> Students = new()
 {
-    new(1, "Martin", "Jensen"),
+    new() {Id = 1, FirstName = "Jens", LastName = "Jensen" },
     new(2, "Patrik", "Nielsen"),
     new(3, "Susanne", "Hansen"),
     new(4, "Thomas", "Olsen")
@@ -42,7 +33,12 @@ List<Course> Courses = new()
     new(3, "Studieteknik", 1),
     new(4, "Clientside programmering", 2)
 };
-List<Enrollment> Enrollments = new();
+*/
+
+
+
+
+List<Class> Enrollments = new();
 
 //School s = new();
 Semester se = new("H1");
@@ -115,7 +111,7 @@ foreach (var course in Courses)
     }
 }
 
-Enrollments.Add(new Enrollment(Enrollments.Count + 1, StudentId, CourseId));
+Enrollments.Add(new Class() {Course = CourseId, Student = StudentId });
 
 foreach (var enrollment in Enrollments)
 {
