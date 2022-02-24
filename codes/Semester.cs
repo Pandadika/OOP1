@@ -18,7 +18,7 @@ namespace OOP1.codes
             Uddanelseslinje = uddannelselinje;
         }
 
-        public void SetUddanelseslinje(string uddanelseslinje, string uddanelsesbeskrivelse)
+        public void SetUddanelselinje(string uddanelseslinje, string uddanelsesbeskrivelse)
         {
             Uddanelseslinje = uddanelseslinje;
             UddanelseslinjeBeskrivelse = uddanelsesbeskrivelse;
@@ -37,6 +37,11 @@ namespace OOP1.codes
         public string? GetUddanelselinje()
         {
             return Uddanelseslinje;
+        }
+
+        public string? GetUddanelselinjeBeskrivelse()
+        {
+            return UddanelseslinjeBeskrivelse;
         }
     }
 
