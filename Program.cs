@@ -10,7 +10,6 @@ List<Course> Courses = new(){
     new() { Id = 4, CourseName = "Clientside programmering", TeacherId = 2}
 };
 
-Semester semester = new("H1", "TEC");
 
 
 Console.WriteLine("Usorteret Liste\n------------------------");
@@ -37,3 +36,12 @@ foreach (var course in Courses)
 {
     Console.WriteLine($"{course.Id}: {course.CourseName}");
 }
+
+Console.WriteLine("");
+
+Semester semester = new("H1", "TEC");
+semester.SetCourseCount(Courses);
+
+Console.WriteLine($"Skolen har {semester.FagIAlt} fag i alt");
+Console.WriteLine($"{semester.GetSemesterName()} har i alt: {semester.ProgrammeringsFagIAlt} programmerings fag");
+Console.ReadLine();
