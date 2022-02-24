@@ -20,6 +20,8 @@ string? output;
 string? input;
 
 
+
+
 System.Console.WriteLine("Angiv Skole");
 input = Console.ReadLine();
 while (input != se.GetSchoolName())
@@ -31,7 +33,7 @@ while (input != se.GetSchoolName())
 output = input + ", ";
 System.Console.WriteLine("Angiv Hovedforløb");
 input = Console.ReadLine();
-while (input != se.GetSemesterNavn())
+while (input != se.GetSemesterName())
 {
     System.Console.WriteLine("Hovedforløb findes ikke");
     System.Console.WriteLine("Angiv Hovedforløb");
