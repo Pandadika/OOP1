@@ -1,12 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using OOP1.codes;
 
 Console.WriteLine("This is arv");
 
 
-//OOP1.codes.School s = new();
+//School s = new();
 
-OOP1.codes.Semester se = new("H1");
-se.Name();
+Semester se = new("H1", "TEC");
 
 string? output;
 string? input;
@@ -14,7 +14,7 @@ string? input;
 
 System.Console.WriteLine("Angiv Skole");
 input = Console.ReadLine();
-while(input != se.Name()){
+while(input.ToUpper() != se.Name()){
     System.Console.WriteLine("Skole findes ikke");
     System.Console.WriteLine("Angiv Skole");
     input = Console.ReadLine();
@@ -22,7 +22,7 @@ while(input != se.Name()){
 output = input+", ";
 System.Console.WriteLine("Angiv Hovedforløb");
 input = Console.ReadLine();
-while(input != se.Forloeb()){
+while(input.ToUpper() != se.Forloeb()){
     System.Console.WriteLine("Hovedforløb findes ikke");
     System.Console.WriteLine("Angiv Hovedforløb");
     input = Console.ReadLine();

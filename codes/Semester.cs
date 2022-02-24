@@ -6,9 +6,11 @@ namespace OOP1.codes
     {
         private string? SemesterNavn {get; set;}
 
-        public Semester(string s)
+        public Semester(string semesterName, string schoolName) : base(schoolName)
         {
-            SemesterNavn = s; 
+            SemesterNavn = semesterName; 
+            SchoolName = schoolName;
+
         }
 
         public string? Name(){
