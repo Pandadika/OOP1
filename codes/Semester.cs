@@ -2,20 +2,21 @@ using System;
 
 namespace OOP1.codes
 {
-    sealed class Semester : School
+    internal sealed class Semester : School
     {
         private string? SemesterNavn {get; set;}
 
-        public Semester(string s)
+        public Semester(string semesterName, string schoolName) : base(schoolName)
         {
-            SemesterNavn = s; 
+            SemesterNavn = semesterName; 
+            SchoolName = schoolName;
         }
 
-        public string? Name(){
+        public string? GetSchoolName(){
             return SchoolName;
         }
 
-        public string? Forloeb()
+        public string? GetSemesterName()
         {
             return SemesterNavn;
         }

@@ -2,12 +2,12 @@ using System;
 
 namespace OOP1.codes
 {
-    abstract class School
+    internal abstract class School
     {
         protected string? SchoolName {get; set;}
-        public School()
+        public School(string s)
         {
-            SchoolName = "TEC";
+            SchoolName = s;
         }
 
 

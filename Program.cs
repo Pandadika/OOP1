@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-// pat OOP1Token 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
+﻿// Iteration 7
 using OOP1.codes;
 using OOP1.codes.models;
 
@@ -12,7 +11,7 @@ List<Student> Students = new(){
 };
 List<Teacher> Teachers = new(){
     new() { Id = 1, FirstName = "Niels", LastName = "Olesen" },
-    new() { Id = 2, FirstName = "Henrik", LastName = "OlePaulsensen" }
+    new() { Id = 2, FirstName = "Henrik", LastName = "Paulsensen" }
 };
 List<Course> Courses = new(){
     new() { Id = 1, CourseName = "Grundliggende programmering" , TeacherId = 1},
@@ -25,7 +24,7 @@ List<Enrollment> Enrollments = new();
 
 
 //School s = new();
-Semester se = new("H1");
+Semester semester = new("H1", "TEC");
 
 string? output;
 string input;
@@ -33,7 +32,7 @@ string input;
 
 System.Console.WriteLine("Angiv Skole");
 input = Console.ReadLine();
-while(input != se.Name()){
+while(input != semester.GetSchoolName()){
     System.Console.WriteLine("Skole findes ikke");
     System.Console.WriteLine("Angiv Skole");
     input = Console.ReadLine();
@@ -41,7 +40,7 @@ while(input != se.Name()){
 output = input+", ";
 System.Console.WriteLine("Angiv Hovedforløb");
 input = Console.ReadLine();
-while(input != se.Forloeb()){
+while(input != semester.GetSemesterName()){
     System.Console.WriteLine("Hovedforløb findes ikke");
     System.Console.WriteLine("Angiv Hovedforløb");
     input = Console.ReadLine();
