@@ -42,7 +42,6 @@ List<Course> Courses = new()
     new(3, "Studieteknik", 1),
     new(4, "Clientside programmering", 2)
 };
-List<Enrollment> Enrollments = new();
 
 //School s = new();
 Semester se = new("H1");
@@ -115,7 +114,8 @@ foreach (var course in Courses)
     }
 }
 
-Enrollments.Add(new Enrollment(Enrollments.Count + 1, StudentId, CourseId));
+aDOHandler.InsertEnrollement(StudentId, CourseId);
+List<object> Enrollments = aDOHandler.GetRecord(TECTables.Class);
 
 foreach (var enrollment in Enrollments)
 {
