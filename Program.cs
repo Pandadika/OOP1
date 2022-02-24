@@ -5,7 +5,7 @@ Box lilleBox = new Box();
 Box lilleBox2 = new Box(2.3,2.5,2.2, BoxType.lilleBox);
 Box toSmåBoxes = lilleBox + lilleBox2;
 Box mediumBox = new Box(2,3,4,BoxType.mediumBox);
-Box storBox = mediumBox + toSmåBoxes;
+Box storBox = mediumBox * toSmåBoxes;
 
 List<Box> boxes = new() { lilleBox, lilleBox2, toSmåBoxes, mediumBox, storBox };
 

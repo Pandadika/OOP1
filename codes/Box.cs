@@ -59,7 +59,14 @@ namespace OOP1Opgave1.codes
             return 1;
         }
 
+        
         public static Box operator+(Box a, Box b)
+        {   
+            double side = Math.Cbrt(a.GetVolume()+b.GetVolume());
+            return new Box(side,side,side,(a*b).BoxType);
+        }
+
+        public static Box operator*(Box a, Box b)
         {
             BoxType boxType;
             if (a.BoxType==BoxType.lilleBox && b.BoxType == BoxType.lilleBox)
