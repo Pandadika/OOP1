@@ -5,20 +5,20 @@ using OOP1.codes.models;
 
 
 List<Student> Students = new(){
-    new Student(1, "Martin", "Jensen"),
-    new Student(2, "Patrik", "Nielsen"),
-    new Student(3, "Susanne", "Hansen"),
-    new Student(4, "Thomas", "Olsen")
+    new() { Id = 1, FirstName = "Martin", LastName = "Jensen"},
+    new() { Id = 2, FirstName = "Patrik", LastName = "Nielsen" },
+    new() { Id = 3, FirstName = "Susanne", LastName = "Hansen" },
+    new() { Id = 4, FirstName = "Thomas", LastName = "Olsen" },
 };
 List<Teacher> Teachers = new(){
-    new Teacher(1, "Niels", "Olesen"),
-    new Teacher(2, "Henrik", "Paulsen")
+    new() { Id = 1, FirstName = "Niels", LastName = "Olesen" },
+    new() { Id = 2, FirstName = "Henrik", LastName = "OlePaulsensen" }
 };
 List<Course> Courses = new(){
-    new Course(1, "Grundliggende programmering", 1),
-    new Course(2, "Database programmering", 1),
-    new Course(3, "Studieteknik", 1),
-    new Course(4, "Clientside programmering", 2)
+    new() { Id = 1, CourseName = "Grundliggende programmering" , TeacherId = 1},
+    new() { Id = 2, CourseName = "Database programmering", TeacherId = 1},
+    new() { Id = 3, CourseName = "Studieteknik", TeacherId = 1},
+    new() { Id = 4, CourseName = "Clientside programmering", TeacherId = 2}
 };
 List<Enrollment> Enrollments = new();
 
@@ -94,7 +94,7 @@ foreach (var course in Courses)
     }
 }
 
-Enrollments.Add(new Enrollment(Enrollments.Count+1,StudentId,CourseId));
+Enrollments.Add(new Enrollment() { Id = Enrollments.Count()+1, CourseId = CourseId, StudentId = StudentId});
 
 foreach (var enrollment in Enrollments)
 {
