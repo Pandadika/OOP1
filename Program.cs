@@ -89,3 +89,7 @@ foreach (var course in courses)
 
 en.InsertEnrollement(StudentId, CourseId);
 List<Class> Enrollments = en.GetClasses();
+foreach (var enrollment in Enrollments)
+{
+    Console.WriteLine(enrollment.ToString());
+}

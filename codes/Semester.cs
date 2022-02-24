@@ -36,10 +36,7 @@ namespace OOP1.codes
 
         public string? GetUddanelselinje()
         {
-            if (Uddanelseslinje == null)
-            {
-                return null;
-            } else return Uddanelseslinje;
+            return Uddanelseslinje;
         }
     }
 
