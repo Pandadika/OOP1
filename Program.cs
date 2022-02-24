@@ -1,7 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // pat OOP1Token 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
 using OOP1.codes;
-
 using OOP1.codes.EntityFrameworkModels;
 using OOP1.codes.EntityFramework_Eksample;
 
