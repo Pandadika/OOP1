@@ -13,8 +13,8 @@ List<Course> courses = en.GetCourses();
 List<Teacher> teachers = en.GetTeacher();
 
 
-//School s = new();
-Semester se = new("H1");
+//School s = new("TEC");
+Semester se = new("H1", "TEC");
 
 string? output;
 string? input;
@@ -22,7 +22,7 @@ string? input;
 
 System.Console.WriteLine("Angiv Skole");
 input = Console.ReadLine();
-while (input != se.Name())
+while (input != se.GetSchoolName())
 {
     System.Console.WriteLine("Skole findes ikke");
     System.Console.WriteLine("Angiv Skole");
@@ -31,7 +31,7 @@ while (input != se.Name())
 output = input + ", ";
 System.Console.WriteLine("Angiv Hovedforløb");
 input = Console.ReadLine();
-while (input != se.Forloeb())
+while (input != se.GetSemesterNavn())
 {
     System.Console.WriteLine("Hovedforløb findes ikke");
     System.Console.WriteLine("Angiv Hovedforløb");

@@ -4,21 +4,21 @@ namespace OOP1.codes
 {
     sealed class Semester : School
     {
-        private string? SemesterNavn { get; set; }
+        private string? SemesterName { get; set; }
 
-        public Semester(string s)
+        public Semester(string semesterName, string schoolName) : base (schoolName)
         {
-            SemesterNavn = s;
+            SemesterName = semesterName;
         }
 
-        public string? Name()
+        public string? GetSchoolName()
         {
-            return SchoolName;
+            return base.SchoolName;
         }
 
-        public string? Forloeb()
+        public string? GetSemesterNavn()
         {
-            return SemesterNavn;
+            return SemesterName;
         }
     }
 
