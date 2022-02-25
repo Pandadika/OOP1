@@ -20,9 +20,9 @@ namespace OOP1Opgave1.codes
         public BoxType BoxType { get;}
 
         public Box(double h, double w, double d, BoxType boxType) {
-            H = h;
-            W = w;
-            D = d;
+            H = Math.Abs(h);
+            W = Math.Abs(w); 
+            D = Math.Abs(d); 
             BoxType = boxType;
         }
         public Box() { 
