@@ -14,10 +14,10 @@ namespace OOP1Opgave1.codes
     }
     public class Box : IComparable<Box>
     {
-        public double H { get;}
-        public double W { get;}
-        public double D { get;}
-        public BoxType BoxType { get;}
+        private double H { get;}
+        private double W { get;}
+        private double D { get;}
+        private BoxType BoxType { get;}
 
         public Box(double h, double w, double d) {
             H = Math.Abs(h);
@@ -49,7 +49,7 @@ namespace OOP1Opgave1.codes
                     break;
             }
              
-            return $"Højde = {H}, Længde = {W}, Dybde = {D}, Type = {type}";
+            return $"Højde = {Math.Round(H,2)}, Længde = {Math.Round(W, 2)}, Dybde = {Math.Round(D, 2)}, Type = {type}";
         }
 
         

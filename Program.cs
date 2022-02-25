@@ -14,10 +14,10 @@ foreach (var box in boxes)
     Console.WriteLine(box.ToString());
 }
 
-Console.WriteLine("\nBox sorteret efter volume");
+Console.WriteLine("\nBoxes sorteret efter volume");
 
 boxes.Sort();
 foreach (var box in boxes)
 {
-    Console.WriteLine("Volume: " + box.GetVolume()+ " " +box.ToString());
+    Console.WriteLine("Volume: " + Math.Round(box.GetVolume(),2)+ " " +box.ToString());
 }
