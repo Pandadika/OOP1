@@ -67,6 +67,8 @@ namespace OOP1Opgave1.codes
             return BoxType.storBox;
         }
 
+
+
         public int CompareTo(Box? other)
         {
             if (other.GetVolume() > this.GetVolume()) return -1;
