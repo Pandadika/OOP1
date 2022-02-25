@@ -19,17 +19,17 @@ namespace OOP1Opgave1.codes
         public double D { get;}
         public BoxType BoxType { get;}
 
-        public Box(double h, double w, double d, BoxType boxType) {
+        public Box(double h, double w, double d) {
             H = Math.Abs(h);
             W = Math.Abs(w); 
             D = Math.Abs(d); 
-            BoxType = boxType;
+            BoxType = SetBoxType();
         }
         public Box() { 
             H = 1.0;
             W = 1.0;
             D = 1.0;
-            BoxType = BoxType.lilleBox;
+            BoxType = SetBoxType();
         }
         public double GetVolume()
         {
@@ -52,6 +52,21 @@ namespace OOP1Opgave1.codes
             return $"Højde = {H}, Længde = {W}, Dybde = {D}, Type = {type}";
         }
 
+        
+        private BoxType SetBoxType()
+
+        {
+            if (this.GetVolume() <= 50 )
+            {
+                return BoxType.lilleBox;
+            }
+            else if (this.GetVolume() > 50 && this.GetVolume() <= 100 )
+            {
+                return BoxType.mediumBox;
+            }
+            return BoxType.storBox;
+        }
+
         public int CompareTo(Box? other)
         {
             if (other.GetVolume() > this.GetVolume()) return -1;
@@ -63,22 +78,13 @@ namespace OOP1Opgave1.codes
         public static Box operator+(Box a, Box b)
         {   
             double side = Math.Cbrt(a.GetVolume()+b.GetVolume());
-            return new Box(side,side,side,(a*b).BoxType);
+            return new(side,side,side);
         }
 
         public static Box operator*(Box a, Box b)
         {
-            BoxType boxType;
-            if (a.BoxType==BoxType.lilleBox && b.BoxType == BoxType.lilleBox)
-            {
-                boxType = BoxType.mediumBox;
-            }
-            else boxType = BoxType.storBox;
-            Box result = new(a.H+b.H,a.W+b.W,a.D+b.D, boxType);
-            return result;
+            return new(a.H+b.H,a.W+b.W,a.D+b.D);
         }
-
-
 
     }
 }
